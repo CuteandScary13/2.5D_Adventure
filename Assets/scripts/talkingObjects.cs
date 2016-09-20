@@ -11,6 +11,7 @@ public class talkingObjects : MonoBehaviour {
 	void Update () {
 		if ((playerPos.position - transform.position).magnitude < magDif) {
 			myText.text = advice;
+			Debug.Log ("Is at object");
 		} else {
 			myText.text = "";
 		}
